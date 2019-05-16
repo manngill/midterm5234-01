@@ -70,18 +70,18 @@ public class SnakeTest {
        
         boolean result = peter.fitsInCage(cageLength);
         assertEquals(expResult, result);
-        System.out.println("Peter fit in cage  " + result);
+        System.out.println("peter fit in cage  " + result);
 
      
         result = peter.fitsInCage(10);
         assertEquals(false, result);
-        System.out.println("Peter fit in cage ? " + result);
+        System.out.println("peter fit in cage ? " + result);
 
        
 
         result = peter.fitsInCage(11);
         assertEquals(true, result);
-        System.out.println("Peter fit in cage ? " + result);
+        System.out.println("peter fit in cage ? " + result);
        
 
 
@@ -90,18 +90,18 @@ public class SnakeTest {
         expResult = false;
         result = Takis.fitsInCage(cageLength);
         assertEquals(expResult, result);
-        System.out.println("Takis fits in cage " + result);
+        System.out.println("Takis fit in cage " + result);
 
        
         result = Takis.fitsInCage(30);
         assertEquals(true, result);
-        System.out.println("Takis fits in cage "+result);
+        System.out.println("Takis fit in cage "+result);
 
         
 
         result = Takis.fitsInCage(120);
         assertEquals(false, result);
-        System.out.println("Takis fits in cage " + result);
+        System.out.println("Takis fit in cage " + result);
 
     }
 
