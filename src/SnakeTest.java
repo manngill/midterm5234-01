@@ -19,21 +19,21 @@ public class SnakeTest {
     }
 
     @BeforeClass
-    public static void setUpClass() {
+    public static void setupclass() {
     }
 
     @AfterClass
-    public static void tearDownClass() {
+    public static void teardownclass() {
     }
 
     @Before
-    public void setUp() {
+    public void setup() {
         peter = new Snake("Peter",5, "Tim bits");
         Takis = new Snake("Takis",10, "vegetables");
     }
 
     @After
-    public void tearDown() {
+    public void teardown() {
     }
 
     /**

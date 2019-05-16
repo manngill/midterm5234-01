@@ -25,6 +25,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Selenium{
 
     public Selenium() {
+    	
+    
     
     	final String URL = "www.blazedemo.com";
     	final String DRIVER_PATH = "/Users/manpreetkaurgill/Desktop/chromedriver";
@@ -32,7 +34,7 @@ public class Selenium{
     	WebDriver driver;
     	
     @Before
-    public void setUp() throws Exception {
+    public void setup() throws Exception {
       
         System.setProperty("chrome driver", DRIVER_PATH);
         driver = new ChromeDriver();
@@ -40,7 +42,7 @@ public class Selenium{
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void teardown() throws Exception {
         Thread.sleep(300);			
         TimeUnit.SECONDS.sleep(1);	
         driver.close();
@@ -60,5 +62,6 @@ public class Selenium{
         assertEquals(3, numLinks);
 
     }
-
+    }
+   
 }
